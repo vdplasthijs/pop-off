@@ -1,8 +1,8 @@
 # Code for Rowland, van der Plas, Loidolt et al.
 
-Code for analysis of all-optical neural data obtained in Packer lab, Oxford. Figures were generated in whole by code, using notebooks in `popping-off/notebooks/Paper Figures/`. This is the code of the following preprint:
+Code for analysis of all-optical neural data obtained in Packer lab, Oxford. Figures were generated in whole by code, using notebooks in `popping-off/notebooks/Paper Figures/`. This is the code of the following paper:
 
-[https://www.biorxiv.org/content/10.1101/2021.12.28.474343v2](https://www.biorxiv.org/content/10.1101/2021.12.28.474343v2)
+Rowland*, J.M., van der Plas*, T.L., Loidolt*, M. et al. _Propagation of activity through the cortical hierarchy and perception are determined by neural variability_. Nature Neuroscience 26, 1584–1594 (**2023**). [https://doi.org/10.1038/s41593-023-01413-5](https://doi.org/10.1038/s41593-023-01413-5)
 
 
 ## Instructions for installation repo:
