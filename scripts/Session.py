@@ -403,6 +403,7 @@ class Session:
         #### Now uses the max rather than the mean
         self.unfiltered_n_cells = self.run.flu.shape[0]
         self.filtered_neurons = np.where(mean_abs_df < abs_threshold)[0]
+        print(f'session {self.signature}: {len(self.filtered_neurons)} kept, {self.unfiltered_n_cells - len(self.filtered_neurons)} excluded, {self.unfiltered_n_cells} total')
         self.behaviour_trials = self.behaviour_trials[self.filtered_neurons, :, :]
         self.pre_rew_trials = self.pre_rew_trials[self.filtered_neurons, :, :]
         self.run.flu = self.run.flu[self.filtered_neurons, :]
@@ -412,7 +413,7 @@ class Session:
         # self.is_target = self.is_target[self.filtered_neurons, :, :]
 
         if vverbose >= 1:
-            if len(self.filtered_neurons < self.unfiltered_n_cells):
+            if len(self.filtered_neurons) < self.unfiltered_n_cells:
                 print(f'{self.unfiltered_n_cells - len(self.filtered_neurons)} / {self.unfiltered_n_cells} cells filtered')
             else:
                 print('No neurons filtered')
